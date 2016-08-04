@@ -1,4 +1,4 @@
-function Encode(obj){
+function Encoding(obj){
     var buffer = new Buffer(obj);
     var bufArray=[], bufArrayPart=[] ,start=0, bufString='',str='',encode='' ;
     buffer.forEach(function (item) {
@@ -23,4 +23,4 @@ function Encode(obj){
 
 }
 
-module.exports = Encode;
+module.exports = Encoding;
