@@ -2,7 +2,7 @@
 
 使用方式
 
->  npm install encodeBase64 -D 安装本包之后
+>  npm install encodeBase64 -D 安装之后
 
 ```javascript
 
