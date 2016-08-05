@@ -10,7 +10,7 @@ function mkdir(obj){
                 if(!exists){
                     fs.mkdir(dirPath, function (err) {
                         if(!err){
-                            console.log(dirPath+' done!');
+                            console.log(dirPath+'done!');
                             mkdir(obj);
                         }
                     })
