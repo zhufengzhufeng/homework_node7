@@ -1,0 +1,19 @@
+.header{
+    width: 80%;
+    margin: 40px auto;
+    background: lightblue;
+    border-radius: 10px;
+    height: 80px; line-height: 80px;
+}
+
+.header .input-group{margin: 20px 50px; width: 40%; float: left;}
+
+
+.panel{width: 80%; margin: 0 auto;}
+
+.table tr, .table th{text-align: center;}
+
+#modify{display: none;}
+
+.panel{position: relative;}
+.panel .input-group{width: 40%; position: absolute; right: 15px; top: 3px;}

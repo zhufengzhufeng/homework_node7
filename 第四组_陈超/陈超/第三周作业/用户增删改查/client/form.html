@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表单注册</title>
+    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="bootstrap.css">
+</head>
+<body>
+<form method="post" class="header" id="form">
+    <div>
+        <div class="input-group">
+            <span class="input-group-addon" id="basic-addon1">@</span>
+            <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1"
+                   name="username">
+        </div>
+
+        <div class="input-group">
+            <span class="input-group-addon">$</span>
+            <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)" placeholder="Password"
+                   name="password">
+        </div>
+    </div>
+
+    <button id="sign" type="button" class="btn btn-default">注册</button>
+
+
+</form>
+
+
+<div class="panel panel-default">
+    <!-- Default panel contents -->
+    <div class="panel-heading">所有用户列表</div>
+    <div class="input-group">
+        <input type="text" class="form-control" placeholder="Search for..." id="searInfo">
+      <span class="input-group-btn">
+        <button class="btn btn-default" type="button" id="search">Go!</button>
+      </span>
+    </div><!-- /input-group -->
+
+    <table class="table">
+        <tr>
+            <th>编号</th>
+            <th>用户名</th>
+            <th>密码</th>
+            <th>删除/修改</th>
+        </tr>
+        <tbody id="tbody">
+        <!--<tr>
+            <td>1</td>
+            <td>陈超</td>
+            <td>123456</td>
+            <td>
+                <button type="button" class="btn btn-primary" id="update">修改</button>
+                <button type="button" class="btn btn-danger" id="delete">删除</button>
+            </td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>陈超</td>
+            <td>123456</td>
+            <td>
+                <button type="button" class="btn btn-primary">修改</button>
+                <button type="button" class="btn btn-danger">删除</button>
+            </td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>陈超</td>
+            <td>123456</td>
+            <td>
+                <button type="button" class="btn btn-primary">修改</button>
+                <button type="button" class="btn btn-danger">删除</button>
+            </td>
+        </tr>-->
+        </tbody>
+    </table>
+</div>
+
+
+<form method="post" class="header" id="modify">
+    <div>
+        <div class="input-group">
+            <span class="input-group-addon" id="basic-addon2">@</span>
+            <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
+        </div>
+
+        <div class="input-group">
+            <span class="input-group-addon">$</span>
+            <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)" placeholder="Password">
+        </div>
+    </div>
+
+    <button id="confirm" type="button" class="btn btn-default">修改</button>
+</form>
+
+</body>
+<script src="form.js"></script>
+</html>

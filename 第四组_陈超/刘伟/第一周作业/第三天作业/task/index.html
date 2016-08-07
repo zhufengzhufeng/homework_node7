@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        .wrapper{
+            width:700px;
+            margin:10px auto;
+        }
+        .btn-primary{
+            width:180px;
+        }
+    </style>
+</head>
+<link rel="stylesheet" href="./css/reset.min.css"/>
+<link rel="stylesheet" href="./css/bootstrap.css"/>
+<body>
+
+<div class="wrapper">
+    <table>
+        <tr>
+            <td>
+                <div class="panel panel-info" style="float:right">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">展示信息</h3>
+                    </div>
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" style="width:320px;" name="searchUser" id="searchUser">
+               <span class="input-group-btn">
+                   <input type="button" class="btn btn-default" value="Go!" id="select"/>
+               </span>
+                                </div>
+                            </div>
+                        </div>
+                        <ul class="list-group" id="userList">
+                            <!--<li class="list-group-item">
+                                <label><input type="checkbox" name="checkbox" value="sfkdjsalgkjalkgj"></label>
+                                <span>sfkdjsalgkjalkgj</span>
+                            </li>-->
+                        </ul>
+                    </div>
+                    <div class="form-group">
+                        <input type="button" class="btn btn-primary" value="删除" id="delete" style="text-align: "/>
+                        <input type="button" class="btn btn-primary" value="修改" id="update"/>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="panel panel-info">
+                    <div class="panel-heading" >
+                        <h3 class="panel-title" id="titles">添加信息</h3>
+                    </div>
+                    <div class="panel-body" id="sign">
+                        <form action="" id="signForm" >
+                            <div class="form-group" id="inp">
+                                <label>姓名：</label><input type="text" class="form-control" name="username"/>
+                                <label>密码：</label><input type="password" class="form-control" name="userpwd"/>
+                            </div>
+                            <div class="form-group">
+                                <input type="button" class="btn btn-primary" value="提交" id="add"/>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </td>
+        </tr>
+    </table>
+
+
+</div>
+</body>
+</html>
+<script src="./js/jquery.js"></script>
+<script src="./js/public.js"></script>
+<script>
+    $(function() {
+        $("#sign").slideUp("slow");
+        $("#titles").click(function () {
+            $('#sign').slideToggle("slow");
+        });
+        selecter();
+    });
+</script>
